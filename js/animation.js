@@ -21,7 +21,7 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
-  var delta = 120 - Math.random() * 100;
+  var delta = 90 - Math.random() * 100;
 
   if (this.isDeleting) { delta /= 2; }
 
@@ -56,6 +56,6 @@ window.onload = function() {
 };
 
 $('.carousel').carousel({
-    interval: 2000
+    interval: 2500
 });
 
