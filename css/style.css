@@ -608,7 +608,7 @@ h1, h2, h3, h4, h5,
   .sticky-wrapper.is-sticky .site-navbar {
     -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
-    background: #fff; }
+    background: #E3262E; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu-toggle > span:before {
       color: #000 !important; }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
@@ -617,13 +617,13 @@ h1, h2, h3, h4, h5,
       display: inline-block; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
         padding: 5px 20px;
-        color: #000;
         display: inline-block;
         text-decoration: none !important; }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
-          color: #f23a2e; }
+            color: #F8B035;}
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after {
-          background: #f23a2e; }
+            background: #F8B035;
+        }
   .sticky-wrapper .shrink {
     padding-top: 10px !important;
     padding-bottom: 10px !important; }
@@ -637,16 +637,20 @@ h1, h2, h3, h4, h5,
   .intro-section, .intro-section .container .row {
     height: 100vh;
     min-height: 900px; }
-  .intro-section:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #ccc;
-    border-bottom-right-radius: 0px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
+    .intro-section:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/team_beon.jpg);
+        opacity: 0.9;
+        -webkit-transition: 0.3s opacity;
+        transition: 0.3s opacity;
+        border-bottom-right-radius: 0px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     @media (max-width: 991.98px) {
       .intro-section:before {
         width: 100%; } }
@@ -660,8 +664,8 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     z-index: 1; }
   .intro-section h1 {
-    font-size: 4rem;
-    font-weight: 900;
+    font-size: 3rem;
+    font-weight: 700;
     color: #fff; }
     @media (max-width: 991.98px) {
       .intro-section h1 {
@@ -943,3 +947,243 @@ h1, h2, h3, h4, h5,
 
 .footer-section {
   padding-top: 12rem !important; }
+
+
+/*=========================================================
+	EVENTS
+===========================================================*/
+
+.event {
+    position: relative;
+}
+
+    .event + .event {
+        margin-top: 60px;
+    }
+
+    .event:after {
+        content: "";
+        position: absolute;
+        left: 60px;
+        top: 0px;
+        bottom: 0px;
+        width: 4px;
+        background-color: #dd0a37;
+    }
+
+    .event:last-child:after {
+        height: 60px;
+    }
+
+    .event + .event:before {
+        content: "";
+        position: absolute;
+        left: 60px;
+        height: 60px;
+        top: -60px;
+        width: 4px;
+        background-color: #dd0a37;
+    }
+
+    .event .event-day {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #dd0a37;
+        z-index: 10;
+    }
+
+    .event .event-hour {
+        position: absolute;
+        left: 62px;
+        top: 60px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #dd0a37;
+        z-index: 10;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .event .event-day > div {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .event .event-day .day {
+        display: block;
+        color: #FFF;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .event .event-day .year {
+        color: #FFF;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .event .event-content {
+        padding-left: 160px;
+        min-height: 120px;
+    }
+
+    .event .event-time {
+        font-size: 14px;
+    }
+
+        .event .event-time i {
+            color: #dd0a37;
+        }
+
+    .event .event-content a {
+        color: #dd0a37;
+    }
+
+.download-btn {
+    margin-top: 60px;
+    text-align: center;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.copyright {
+    height: 50px;
+    line-height: 50px;
+}
+
+.contact-social {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+    .contact-social a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background: #dd0a37;
+        color: #fff;
+        line-height: 30px;
+        margin-right: 15px;
+        -webkit-transition: 0.3s all;
+        transition: 0.3s all;
+    }
+
+        .contact-social a:hover {
+            opacity: 0.8;
+        }
+
+
+.owl-carousel .owl-item img {
+    display: unset;
+    width:unset;
+}
+
+
+.section-title .title {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 42px;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+    .section-title .title {
+        position: relative;
+        text-transform: capitalize;
+        font-weight: 900;
+        font-size: 42px;
+        overflow: hidden;
+    }
+
+.download-btn {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.section {
+    position: relative;
+    padding: 90px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+a {
+    color: #0b0f28;
+    -webkit-transition: 0.3s color;
+    transition: 0.3s color;
+}
+
+    a:hover, a:focus {
+        text-decoration: none;
+        outline: none;
+        color: #dd0a37;
+    }
+
+.main-btn {
+    display: inline-block;
+    padding: 14px 50px;
+    background: #dd0a37;
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+    .main-btn:hover, .main-btn:focus {
+        color: #FFF;
+        opacity: 0.8;
+    }
+
+
+.image_header {
+    height: 890px;
+    position: relative;
+    background-image: url(../images/team_beon.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.sponsor {
+    display: block;
+    margin-bottom: 30px;
+    -webkit-transition: 0.3s opacity;
+    transition: 0.3s opacity;
+}
