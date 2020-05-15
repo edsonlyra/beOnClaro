@@ -642,7 +642,6 @@ h1, h2, h3, h4, h5,
         position: absolute;
         height: 100%;
         width: 100%;
-        background-image: url(../images/team_beon.jpg);
         opacity: 0.9;
         -webkit-transition: 0.3s opacity;
         transition: 0.3s opacity;
@@ -934,10 +933,34 @@ h1, h2, h3, h4, h5,
 
 .person h3 {
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom:50px;
+}
 
 .person p {
   font-size: 15px; }
+
+
+.img-card img {
+    margin-bottom: 20px;
+}
+
+.card .position {
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 15px;
+}
+
 
 #contact-section .form-control {
   background: #fff; }
@@ -1100,7 +1123,6 @@ h1, h2, h3, h4, h5,
 
 .section-title .title {
     position: relative;
-    text-transform: capitalize;
     font-weight: 900;
     font-size: 42px;
     overflow: hidden;
@@ -1113,7 +1135,6 @@ h1, h2, h3, h4, h5,
 
     .section-title .title {
         position: relative;
-        text-transform: capitalize;
         font-weight: 900;
         font-size: 42px;
         overflow: hidden;
