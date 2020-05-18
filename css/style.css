@@ -806,8 +806,11 @@ h1, h2, h3, h4, h5,
       background: #f23a2e; }
 
 .section-heading .subheading {
-  color: #ababab;
-  font-size: 1.2rem; }
+    color: #E3262E;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight:900;
+}
 
 .section-heading .heading {
   color: #000;
