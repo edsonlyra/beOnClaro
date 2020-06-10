@@ -960,9 +960,9 @@ footer .logo img {
 .person p {
   font-size: 15px; }
 
-.person-contributors {
+.person-contributors img {
     max-width: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     filter: grayscale(100%);
 }
 
