@@ -942,7 +942,8 @@ footer .logo img {
     max-width: 100px;
     border-radius: 50%;
     margin-bottom: 30px;
-   }
+    filter: grayscale(100%);
+}
 
 .person .position {
   color: #ccc;
