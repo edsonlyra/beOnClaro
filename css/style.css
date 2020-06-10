@@ -942,7 +942,7 @@ footer .logo img {
     max-width: 100px;
     border-radius: 50%;
     margin-bottom: 30px;
-    filter: grayscale(100%);}
+   }
 
 .person .position {
   color: #ccc;
@@ -960,6 +960,11 @@ footer .logo img {
 .person p {
   font-size: 15px; }
 
+.person-contributors {
+    max-width: 100px;
+    margin-bottom: 30px;
+    filter: grayscale(100%);
+}
 
 .img-card img {
     margin-bottom: 20px;
