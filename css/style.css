@@ -962,8 +962,8 @@ footer .logo img {
   font-size: 15px; }
 
 .person-contributors img {
-    max-width: 100px;
-    margin-bottom: 20px;
+    max-width: 150px;
+    padding-right: 60px;
     filter: grayscale(100%);
 }
 
