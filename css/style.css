@@ -962,14 +962,19 @@ footer .logo img {
   font-size: 15px; }
 
 .person-contributors img {
-    max-width: 150px;
-    padding-right: 60px;
+    max-width: 90px;
     filter: grayscale(100%);
 }
 
 .img-card img {
     margin-bottom: 20px;
+    max-width:250px;
 }
+
+.img-partner img {
+    max-width: 150px;
+}
+
 
 .card .position {
     color: #ccc;
