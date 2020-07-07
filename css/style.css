@@ -1150,20 +1150,30 @@ footer .logo img {
 }
 
 
-#hackathon {
-    background-color: black;
-}
+.hackathon {
+        background-color: black;
+    }
 
-#hackathon h2,h3,h4, p { color:white;
-}
+    .hackathon h2, h3, h4, p {
+        color: white;
+        ont-weight: 900;
+    }
 
 
-.section-title .title {
-    position: relative;
-    font-weight: 900;
-    font-size: 42px;
-    overflow: hidden;
-}
+    .hackathon .heading {
+        color: white;
+    }
+
+    .hackathon .red {
+        color: #E3262E;
+    }
+
+    .section-title .title {
+        position: relative;
+        font-weight: 900;
+        font-size: 42px;
+        overflow: hidden;
+    }
 
 .section-title {
     text-align: center;
