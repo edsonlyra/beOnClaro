@@ -1154,9 +1154,8 @@ footer .logo img {
         background-color: black;
     }
 
-    .hackathon h2, h3, h4, p {
-        color: white;
-        ont-weight: 900;
+.hackathon h2,h3,h4, p { color:white;
+                         font-weight: 900;
     }
 
 
@@ -1164,7 +1163,7 @@ footer .logo img {
         color: white;
     }
 
-    .hackathon .red {
+    .hackathon .highlight {
         color: #E3262E;
     }
 
