@@ -1578,26 +1578,23 @@ footer .logo img {
 
 .hackathon {
     background-color: black;
+    color: white;
 }
-
-    .hackathon h2,
-    h3,
-    h4,
-    p {
+    .hackathon h2, h3, h4 {
         color: white;
     }
-
-    .hackathon h2,
-    h4 {
+    .hackathon h2, h4 {
         font-weight: 900;
     }
 
     .hackathon .heading {
         color: white;
     }
-
     .hackathon .highlight {
         color: #E3262E;
+    }
+    .hackathon .img-hack {
+        max-width: 200px;
     }
 
 .section-title .title {
@@ -1680,3 +1677,4 @@ a {
     -webkit-transition: 0.3s opacity;
     transition: 0.3s opacity;
 }
+    
