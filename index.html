@@ -12,138 +12,9 @@
             }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TB4LW3L');</script>
     <!-- End Google Tag Manager -->
-    <!-- OneTrust Cookies Consent Notice start -->
     <script type="text/javascript" src="https://cdn.cookielaw.org/consent/5378b42b-b3c1-4646-b57d-813ed1c2b752/OtAutoBlock.js"></script>
     <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="5378b42b-b3c1-4646-b57d-813ed1c2b752"></script>
-    <script type="text/javascript">//Modal de gerenciamento de cookies
-        let ot_lgpd_count = 0;
-        function gerenciarCookies() {
-            ot_lgpd_count++;
-            dataLayer.push({
-                'event': 'event',
-                'eventCategory': 'claro:politica-de-privacidade',
-                'eventAction': 'abertura-modal',
-                'eventLabel': "configuracao-de-cookies",
-            });
-
-            //Botão fechar
-            let fechar = document.querySelector("#close-pc-btn-handler");
-
-            fechar.setAttribute("data-gtm-event-category", "claro:politica-de-privacidade");
-            fechar.setAttribute("data-gtm-event-action", "clique:botao");
-            fechar.setAttribute(
-                "data-gtm-event-label",
-                "modal:configuracao-de-cookies:fechar"
-            );
-
-            //Toggle
-            let toggle = document.getElementsByClassName("ot-switch ot-toggle");
-            let i, input, categoria, isChecked, elementoAtual;
-
-            if (ot_lgpd_count === 1) {
-                for (i = 1; i < toggle.length; i++) {
-                    input = toggle[i].getElementsByClassName(
-                        "switch-checkbox category-switch-handler"
-                    );
-
-                    categoria = input[0].getAttribute("data-optanongroupid");
-
-                    if (categoria == "C0002") {
-                        toggle[i].addEventListener("mouseup", function () {
-                            dataLayer.push({
-                                'event': 'event',
-                                'eventCategory': 'claro:politica-de-privacidade',
-                                'eventAction': this.childNodes[0].checked ? 'removeu-selecao' : 'selecionou',
-                                'eventLabel': 'modal:configuracao-de-cookies:cookies-de-desempenho',
-                            });
-                        });
-                    } else if (categoria == "C0003") {
-                        toggle[i].addEventListener("mouseup", function () {
-                            dataLayer.push({
-                                'event': 'event',
-                                'eventCategory': 'claro:politica-de-privacidade',
-                                'eventAction': this.childNodes[0].checked ? 'removeu-selecao' : 'selecionou',
-                                'eventLabel': 'modal:configuracao-de-cookies:cookies-de-funcionalidades',
-                            });
-                        });
-                    } else if (categoria == "C0004") {
-                        toggle[i].addEventListener("mouseup", function () {
-                            dataLayer.push({
-                                'event': 'event',
-                                'eventCategory': 'claro:politica-de-privacidade',
-                                'eventAction': this.childNodes[0].checked ? 'removeu-selecao' : 'selecionou',
-                                'eventLabel': 'modal:configuracao-de-cookies:cookies-de-publicidade',
-                            });
-                        });
-                    } else if (categoria == "C0005") {
-                        toggle[i].addEventListener("mouseup", function () {
-                            dataLayer.push({
-                                'event': 'event',
-                                'eventCategory': 'claro:politica-de-privacidade',
-                                'eventAction': this.childNodes[0].checked ? 'removeu-selecao' : 'selecionou',
-                                'eventLabel': 'modal:configuracao-de-cookies:cookies-de-redes-sociais',
-                            });
-                        });
-                    }
-                }
-            }
-
-            /*Salvar */
-            let salvar = document.getElementsByClassName(
-                "save-preference-btn-handler onetrust-close-btn-handler button-theme"
-            )[0];
-
-            salvar.setAttribute("data-gtm-event-category", "claro:politica-de-privacidade");
-            salvar.setAttribute("data-gtm-event-action", "clique:botao");
-            salvar.setAttribute(
-                "data-gtm-event-label",
-                "modal:configuracao-de-cookies:salvar"
-            );
-        }
-        let ot_lgpd_isLoaded = false;
-        function OptanonWrapper() {
-            if (!ot_lgpd_isLoaded) {
-                //Banner de cookies
-                //Link - política de privacidade
-                if (document.querySelector("#onetrust-policy-text")) {
-                    let link_pol = document
-                        .querySelector("#onetrust-policy-text")
-                        .getElementsByTagName("a")[0];
-
-                    link_pol.setAttribute("data-gtm-event-category", "claro:politica-de-privacidade");
-                    link_pol.setAttribute("data-gtm-event-action", "clique:link");
-                    link_pol.setAttribute(
-                        "data-gtm-event-label",
-                        "politica-de-cookies"
-                    );
-
-                    //Botão aceitar todos os cookies
-                    let aceitar = document.querySelector(
-                        "#onetrust-accept-btn-handler"
-                    );
-                    //aceitar.classList.add("gtm-element-event");
-                    aceitar.setAttribute("data-gtm-event-category", "claro:politica-de-privacidade");
-                    aceitar.setAttribute("data-gtm-event-action", "clique:botao");
-                    aceitar.setAttribute(
-                        "data-gtm-event-label",
-                        "aceitar-todos-os-cookies"
-                    );
-
-                    //Botão gerenciar todos os cookies
-                    let gerenciar = document.querySelector("#onetrust-pc-btn-handler");
-
-                    gerenciar.setAttribute("data-gtm-event-category", "claro:politica-de-privacidade");
-                    gerenciar.setAttribute("data-gtm-event-action", "clique:botao");
-                    gerenciar.setAttribute("data-gtm-event-label", "gerenciar-cookies");
-
-                    document
-                        .querySelector("#onetrust-pc-btn-handler")
-                        .addEventListener("click", gerenciarCookies);
-
-                    ot_lgpd_isLoaded = true;
-                }
-            }
-        }</script>
+    <script src="http://dev-portal-lgpd.clarobrasil.mobi/privacidade/static/cookies/js/tag-claro-1.0.js" type="text/javascript" charset="UTF-8"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script type="text/javascript" src="/ruxitagentjs_ICA27SVfgjoqrux_10191200518082328.js" data-dtconfig="rid=RID_1474579006|rpid=1040562402|domain=claro.com.br|reportUrl=/rb_89afdcfd-68f5-4edb-9a9a-215e44803e5f|app=ca901e98f7e8987e|featureHash=ICA27SVfgjoqrux|doNotDetect=scr|rdnt=1|uxrgce=1|bp=2|cuc=73j9n59y|srms=1,1,,,|uxrgcm=100,25,300,3;100,25,300,3|bismepl=2000|lastModification=1590698043237|dtVersion=10191200518082328|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_ICA27SVfgjoqrux_10191200518082328.js"></script>
@@ -154,7 +25,6 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
@@ -564,10 +434,10 @@
                         </div>
                         <div class="col-lg-3 mb-4 col-md-4 ftco-feature-1" data-aos="fade-up" data-aos-delay="200">
                             <div class="img-card">
-                                <a href="news.html"><img src="images/news.jpg" alt="Image" class="img-fluid"></a>
-                                <h2><a href="news.html">Eventos e Noticias</a></h2>
+                                <a href="news.html" data-gtm-category="claro:lp:beon" data-gtm-action="click:botao" data-gtm-label="frame-1:eventos-noticias-img"><img src="images/news.jpg" alt="Image" class="img-fluid"></a>
+                                <h2><a href="news.html" data-gtm-category="claro:lp:beon" data-gtm-action="click:botao" data-gtm-label="frame-1:eventos-noticias-link">Eventos e Noticias</a></h2>
                                 <p>
-                                    Nosso radar tecnológico com tendências e eventos
+                                    Nosso radar tecnológico com noticias, tendências e eventos
                                 </p>
                             </div>
                         </div>
@@ -711,16 +581,6 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/typed.js"></script>
-    <script>var typed = new Typed('.typed-words', {
-            strings: ["é o hub de inovação da Claro", "Claro existe para facilitar, potencializar e conectar a inovação dentro e fora da Claro"],
-            typeSpeed: 80,
-            backSpeed: 80,
-            backDelay: 4000,
-            startDelay: 1000,
-            loop: true,
-            showCursor: true
-        });</script>
 
 
 </body>
