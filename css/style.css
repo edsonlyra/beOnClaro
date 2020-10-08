@@ -23,6 +23,7 @@ body {
 }
 
 a {
+    font-weight: bold;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
@@ -37,13 +38,21 @@ h2,
 h3,
 h4,
 h5,
+h6,
 .h1,
 .h2,
 .h3,
 .h4,
-.h5 {
+.h5
+.h6
+    {
     font-family: "DIN OT", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: #000;
+}
+
+h6,
+.h6 {
+    color: #666666;
 }
 
 .btn {
@@ -1676,3 +1685,14 @@ a {
     transition: 0.3s opacity;
 }
 
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+b, strong {
+    color: #666666;
+    font-size: 1rem;
+    font-weight: bold;
+}
