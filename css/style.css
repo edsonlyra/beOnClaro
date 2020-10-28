@@ -969,7 +969,6 @@ footer .logo img {
     .intro-section,
     .intro-section .container .row {
         height: 100vh;
-        min-height: 900px;
     }
 
         .intro-section:before {
