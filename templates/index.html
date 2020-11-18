@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿{% load static %}
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <title>beOn Claro - O hub de inovação da Claro</title>
@@ -17,16 +19,16 @@
     <script src="https://dev-portal-lgpd.clarobrasil.mobi/privacidade/static/cookies/js/tag-claro-1.0.js" type="text/javascript" charset="UTF-8"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="css/mondrian-fonts-1.1.0.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="/static/css/mondrian-fonts-1.1.0.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/aos.css">
+    <link href="/static/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <!-- Google Tag Manager (noscript) -->
@@ -48,31 +50,32 @@
             <div class="container-fluid">
                 <div class="d-flex align-items-center">
                     <div class="site-logo">
-                        <a href="index.html">
-                            <img src="images/logo-beon.svg" alt="beOn Claro">
+                        <a href="/static/">
+                            <img src="/static/images/logo-beon.svg" alt="beOn Claro">
                         </a>
                     </div>
                     <div class="ml-auto">
-                        <nav class="site-navigation position-relative text-right">
-                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li>
-                                    <a href="#home" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="home">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#open" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="inovacao-aberta">Inovação Aberta</a>
-                                </li>
-                                <li>
-                                    <a href="#radar" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="radar-beOn">Radar beOn</a>
-                                </li>
-                                <li>
-                                    <a href="#hackathon" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="hackathon-">Hackathon</a>
-                                </li>
-                                <li>
-                                    <a href="#contact" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="conecte-se">Conecte-se</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right active">
+                        <div class="ml-auto">
+                            <nav class="site-navigation position-relative text-right">
+                                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                    <li>
+                                        <a href="/" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#open" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="inovacao-aberta">Inovação Aberta</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#radar" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="radar-beOn">Radar beOn</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#hackathon" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="hackathon-">Hackathon</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#contact" class="nav-link gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:menu-superior" data-gtm-label="conecte-se">Conecte-se</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        <a href="/static/#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right active">
                             <span class="icon-menu h3"></span>
                         </a>
                     </div>
@@ -86,7 +89,7 @@
                     <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
                         <h1 class="mb-3">O beOn <span class="typed-words">é o hub de inovação da Claro</span>.</h1>
                         <p class="text-center">
-                            <a href="#contact" class="btn btn-outline-red py-2 px-3 gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-label="frame-1:quero-me-conectar">Quero me conectar</a>
+                            <a href="/#contact" class="btn btn-outline-red py-2 px-3 gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-label="frame-1:quero-me-conectar">Quero me conectar</a>
                         </p>
                     </div>
                 </div>
@@ -105,10 +108,10 @@
                     <div class="owl-carousel nonloop-block-14 block-14" data-aos="fade">
                         <div class="slide">
                             <div class="ftco-feature-1">
-                                <img src="icon/special_1.svg" alt="">
+                                <img src="/static/icon/special_1.svg" alt="">
                                 <div class="ftco-feature-1-text">
                                     <h2>
-                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:quero-cocriar" href="#contact">
+                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:quero-cocriar" href="/static/#contact">
                                             Co-criação
                                         </a>
                                     </h2>
@@ -119,10 +122,10 @@
                         </div>
                         <div class="slide">
                             <div class="ftco-feature-1">
-                                <img src="icon/special_2.svg" alt="">
+                                <img src="/static/icon/special_2.svg" alt="">
                                 <div class="ftco-feature-1-text">
                                     <h2>
-                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:tenho-negocio" href="#contact">
+                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:tenho-negocio" href="/static/#contact">
                                             Já tenho um negócio
                                         </a>
                                     </h2>
@@ -135,10 +138,10 @@
                         </div>
                         <div class="slide">
                             <div class="ftco-feature-1">
-                                <img src="icon/special_3.svg" alt="">
+                                <img src="/static/icon/special_3.svg" alt="">
                                 <div class="ftco-feature-1-text">
                                     <h2>
-                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:sou-pesquisador" href="#contact">
+                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:sou-pesquisador" href="/static/#contact">
                                             Sou Pesquisador
                                         </a>
                                     </h2>
@@ -151,10 +154,10 @@
                         </div>
                         <div class="slide">
                             <div class="ftco-feature-1">
-                                <img src="icon/special_5.svg" alt="">
+                                <img src="/static/icon/special_5.svg" alt="">
                                 <div class="ftco-feature-1-text">
                                     <h2>
-                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:ict" href="#contact">
+                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:ict" href="/static/#contact">
                                             Faço parte de um ICT
                                         </a>
                                     </h2>
@@ -169,10 +172,10 @@
                         <div class="slide">
 
                             <div class="ftco-feature-1">
-                                <img src="icon/special_4.svg" alt="">
+                                <img src="/static/icon/special_4.svg" alt="">
                                 <div class="ftco-feature-1-text">
                                     <h2>
-                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:fundo-investimento" href="#contact"> Fundos de investimento</a>
+                                        <a class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-event-action="click:botao" data-gtm-event-label="card:fundo-investimento" href="/static/#contact"> Fundos de investimento</a>
                                     </h2>
 
                                     <p>
@@ -185,7 +188,7 @@
                 </div>
             </div>
         </div>
-        <div class="bgimg" style="background-image: url('images/bg-porque.jpg');" data-stellar-background-ratio="1">
+        <div class="bgimg" style="background-image: url('/static/images/bg-porque.jpg');" data-stellar-background-ratio="1">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-9">
@@ -242,97 +245,97 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/duclos.jpg" alt="Rodrigo Duclos" title="Rodrigo Duclos" class="img-fluid">
+                            <img src="/static/images/duclos.jpg" alt="Rodrigo Duclos" title="Rodrigo Duclos" class="img-fluid">
                             <h3>Rodrigo Duclos</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/diogo.jpg" alt="Diogo Natacci" title="Diogo Natacci" class="img-fluid">
+                            <img src="/static/images/diogo.jpg" alt="Diogo Natacci" title="Diogo Natacci" class="img-fluid">
                             <h3>Diogo Natacci</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/monica.jpg" alt="Monica Gaspar" title="Monica Gaspar" class="img-fluid">
+                            <img src="/static/images/monica.jpg" alt="Monica Gaspar" title="Monica Gaspar" class="img-fluid">
                             <h3>Monica Gaspar</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/mario.jpg" alt="Mario Borelli" title="Mario Borelli" class="img-fluid">
+                            <img src="/static/images/mario.jpg" alt="Mario Borelli" title="Mario Borelli" class="img-fluid">
                             <h3>Mario Borelli</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/debora.jpg" alt="Debora Doimo" title="Debora Doimo" class="img-fluid">
+                            <img src="/static/images/debora.jpg" alt="Debora Doimo" title="Debora Doimo" class="img-fluid">
                             <h3>Debora Doimo</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/monique.jpg" alt="Monique Pacini" title="Monique Pacini" class="img-fluid">
+                            <img src="/static/images/monique.jpg" alt="Monique Pacini" title="Monique Pacini" class="img-fluid">
                             <h3>Monique Pacini</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/edsonlyra.jpg" alt="Edson Lyra" title="Edson Lyra" class="img-fluid">
+                            <img src="/static/images/edsonlyra.jpg" alt="Edson Lyra" title="Edson Lyra" class="img-fluid">
                             <h3>Edson Lyra</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/roma.jpg" alt="Luiz Roma" title="Luiz Roma" class="img-fluid">
+                            <img src="/static/images/roma.jpg" alt="Luiz Roma" title="Luiz Roma" class="img-fluid">
                             <h3>Luiz Roma</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/gustavo.jpg" alt="Gustavo Gambera" title="Gustavo Gambera" class="img-fluid">
+                            <img src="/static/images/gustavo.jpg" alt="Gustavo Gambera" title="Gustavo Gambera" class="img-fluid">
                             <h3>Gustavo Gambera</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/daniel.jpg" alt="Daniel Biondi" title="Daniel Biondi" class="img-fluid">
+                            <img src="/static/images/daniel.jpg" alt="Daniel Biondi" title="Daniel Biondi" class="img-fluid">
                             <h3>Daniel Biondi</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/feliphe.jpg" alt="Feliphe Galiza" title="Feliphe Galiza" class="img-fluid">
+                            <img src="/static/images/feliphe.jpg" alt="Feliphe Galiza" title="Feliphe Galiza" class="img-fluid">
                             <h3>Feliphe Galiza</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/ju.jpg" alt="Juliane Costa" title="Juliane Costa" class="img-fluid">
+                            <img src="/static/images/ju.jpg" alt="Juliane Costa" title="Juliane Costa" class="img-fluid">
                             <h3>Juliane Costa</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/gabriel.jpg" alt="Gabriel Antonio" title="Gabriel Antonio" class="img-fluid">
+                            <img src="/static/images/gabriel.jpg" alt="Gabriel Antonio" title="Gabriel Antonio" class="img-fluid">
                             <h3>Gabriel Antonio</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/pablo.jpg" alt="Pablo Carvalho" title="Pablo Carvalho" class="img-fluid">
+                            <img src="/static/images/pablo.jpg" alt="Pablo Carvalho" title="Pablo Carvalho" class="img-fluid">
                             <h3>Pablo Carvalho</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/david.jpg" alt="David Oliveira" title="David Oliveira" class="img-fluid">
+                            <img src="/static/images/david.jpg" alt="David Oliveira" title="David Oliveira" class="img-fluid">
                             <h3>David Oliveira</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person">
-                            <img src="images/jose.jpg" alt="Jose Cupertino Ruiz Vargas" title="Jose Cupertino Ruiz Vargas" class="img-fluid">
+                            <img src="/static/images/jose.jpg" alt="Jose Cupertino Ruiz Vargas" title="Jose Cupertino Ruiz Vargas" class="img-fluid">
                             <h3>Jose Vargas</h3>
                         </div>
                     </div>
@@ -347,82 +350,82 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/rodrigo.jpg" alt="Rodrigo Torres" title="Rodrigo Torres" class="img-fluid">
+                            <img src="/static/images/rodrigo.jpg" alt="Rodrigo Torres" title="Rodrigo Torres" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/eli.jpg" alt="Eliane Zuin" title="Eliane Zuin" class="img-fluid">
+                            <img src="/static/images/eli.jpg" alt="Eliane Zuin" title="Eliane Zuin" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/felipe.jpg" alt="Fellipe Scrafani" title="Fellipe Scrafani" class="img-fluid">
+                            <img src="/static/images/felipe.jpg" alt="Fellipe Scrafani" title="Fellipe Scrafani" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/bruna.jpg" alt="Bruna Nelken" title="Bruna Nelken" class="img-fluid">
+                            <img src="/static/images/bruna.jpg" alt="Bruna Nelken" title="Bruna Nelken" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/denis.jpg" alt="Denis Tokura" title="Denis Tokura" class="img-fluid">
+                            <img src="/static/images/denis.jpg" alt="Denis Tokura" title="Denis Tokura" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/jaime.jpg" alt="Jaime Frenkel" title="Jaime Frenkel" class="img-fluid">
+                            <img src="/static/images/jaime.jpg" alt="Jaime Frenkel" title="Jaime Frenkel" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/arnaldo.jpg" alt="Arnaldo Vieira" title="Arnaldo Vieira" class="img-fluid">
+                            <img src="/static/images/arnaldo.jpg" alt="Arnaldo Vieira" title="Arnaldo Vieira" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/vinicius.jpg" alt="Vinicius Brasil" title="Vinicius Brasil" class="img-fluid">
+                            <img src="/static/images/vinicius.jpg" alt="Vinicius Brasil" title="Vinicius Brasil" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/rodrigo-2.jpg" alt="Rodrigo Moraes" title="Rodrigo Moraes" class="img-fluid">
+                            <img src="/static/images/rodrigo-2.jpg" alt="Rodrigo Moraes" title="Rodrigo Moraes" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/pelegrini.jpg" alt="Ricardo Pelegrini" title="Ricardo Pelegrini" class="img-fluid">
+                            <img src="/static/images/pelegrini.jpg" alt="Ricardo Pelegrini" title="Ricardo Pelegrini" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/lucimara.jpg" alt="Lucimara Davila" title="Lucimara Davila" class="img-fluid">
+                            <img src="/static/images/lucimara.jpg" alt="Lucimara Davila" title="Lucimara Davila" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/caique.jpg" alt="Caique Esmi" title="Caique Esmi" class="img-fluid">
+                            <img src="/static/images/caique.jpg" alt="Caique Esmi" title="Caique Esmi" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/cris.jpg" alt="Cristiane Matsumoto" title="Cristiane Matsumoto" class="img-fluid">
+                            <img src="/static/images/cris.jpg" alt="Cristiane Matsumoto" title="Cristiane Matsumoto" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/ju-2.jpg" alt="Juliana Alves" title="Juliana Alves" class="img-fluid">
+                            <img src="/static/images/ju-2.jpg" alt="Juliana Alves" title="Juliana Alves" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/juliana.jpg" alt="Juliana Trindade Costa" title="Juliana Trindade Costa" class="img-fluid">
+                            <img src="/static/images/juliana.jpg" alt="Juliana Trindade Costa" title="Juliana Trindade Costa" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-1 mb-2 mb-lg-2 col-md-2 col-sm-3 col text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="person-contributors">
-                            <img src="images/mazoni.jpg" alt="Marcos Mazzoni Filho" title="Marcos Mazzoni Filho" class="img-fluid">
+                            <img src="/static/images/mazoni.jpg" alt="Marcos Mazzoni Filho" title="Marcos Mazzoni Filho" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -437,10 +440,10 @@
                     <div class="row col-md-12 offset-md-2">
                         <div class="col-lg-3 mb-4  col-md-4 ftco-feature-1" data-aos="fade-up" data-aos-delay="">
                             <div class="img-card">
-                                <a href="claro-meetup.html" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[claro-meetup]]">
-                                    <img src="images/claro-meetup.jpg" alt="Claro Meetup" title="Claro Meetup" class="img-fluid">
+                                <a href="meetup" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[claro-meetup]]">
+                                    <img src="/static/images/claro-meetup.jpg" alt="Claro Meetup" title="Claro Meetup" class="img-fluid">
                                 </a>
-                                <h2><a href="claro-meetup.html" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[claro-meetup]]">Claro Meetup</a></h2>
+                                <h2><a href="meetup" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[claro-meetup]]">Claro Meetup</a></h2>
                                 <p>
                                     Encontros informais para troca de conhecimento e experiências
                                 </p>
@@ -449,11 +452,11 @@
                         </div>
                         <div class="col-lg-3 mb-4 col-md-4 ftco-feature-1" data-aos="fade-up" data-aos-delay="100">
                             <div class="img-card">
-                                <a href="news.html" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[news]]">
-                                    <img src="images/news.jpg" alt="Eventos e Noticias" title="Eventos e Noticias" class="img-fluid">
+                                <a href="news" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[news]]">
+                                    <img src="/static/images/news.jpg" alt="Eventos e Noticias" title="Eventos e Noticias" class="img-fluid">
                                 </a>
                                 <h2>
-                                    <a href="news.html" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[news]]">
+                                    <a href="news" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[news]]">
                                         Eventos e Noticias
                                     </a>
                                 </h2>
@@ -464,8 +467,14 @@
                         </div>
                         <div class="col-lg-3 mb-4 col-md-4 ftco-feature-1" data-aos="fade-up" data-aos-delay="200">
                             <div class="img-card">
-                                <img src="images/podcast.jpg" alt="Em breve" title="Em breve" class="img-fluid">
-                                <h2>beOn Podcast</h2>
+                                <a href="podcast" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[news]]">
+                                    <img src="/static/images/podcast.jpg" alt="Em breve" title="Em breve" class="img-fluid">
+                                </a>
+                                <h2>
+                                    <a href="podcast" class="gtm-link-event" data-gtm-event-category="claro:lp:beon" data-gtm-action="click:link" data-gtm-label=“[[news]]">
+                                        beOn Podcast
+                                    </a>
+                                </h2>
                                 <p>
                                     Em breve, PodCasts com a participação e curadoria do beOn
                                 </p>
@@ -492,7 +501,7 @@
                         <p>É uma maratona de desenvolvimento que tem como objetivo reunir pessoas com diferentes conhecimentos e desafiá-las a criarem juntas novos produtos e serviços. Um ambiente perfeito para fomentar a inovação e resolução de problemas que impactem a sociedade.</p>
                     </div>
                     <div class="col-md-4 mt-5 text-center">
-                        <img src="images/code.png" alt="Hackathon beOn Hacka" title="Hackathon beOn Hacka" class="img-fluid img-hack">
+                        <img src="/static/images/code.png" alt="Hackathon beOn Hacka" title="Hackathon beOn Hacka" class="img-fluid img-hack">
                     </div>
                 </div>
                 <div class="row justify-content-center text-center mb-5">
@@ -518,47 +527,47 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="img-partner">
-                            <img src="images/logo-pnp.jpg" alt="Plug and Play" title="Plug and Play" class="img-fluid">
+                            <img src="/static/images/logo-pnp.jpg" alt="Plug and Play" title="Plug and Play" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="img-partner">
-                            <img src="images/logo-cpqd.jpg" alt="CPQD" title="CPQD" class="img-fluid">
+                            <img src="/static/images/logo-cpqd.jpg" alt="CPQD" title="CPQD" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="img-partner">
-                            <img src="images/logo-instituto-claro.jpg" alt="Instituto Claro" title="Instituto Claro" class="img-fluid">
+                            <img src="/static/images/logo-instituto-claro.jpg" alt="Instituto Claro" title="Instituto Claro" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="img-partner">
-                            <img src="images/logo-campus.jpg" alt="Campus Mobile" title="Campus Mobile" class="img-fluid">
+                            <img src="/static/images/logo-campus.jpg" alt="Campus Mobile" title="Campus Mobile" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="img-partner">
-                            <img src="images/logo-lsitec.jpg" alt="LSITEC" title="LSITEC" class="img-fluid">
+                            <img src="/static/images/logo-lsitec.jpg" alt="LSITEC" title="LSITEC" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="img-partner">
-                            <img src="images/logo-quantum4.jpg" alt="Quantum4" title="Quantum4" class="img-fluid">
+                            <img src="/static/images/logo-quantum4.jpg" alt="Quantum4" title="Quantum4" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="img-partner">
-                            <img src="images/logo-elogroup.jpg" alt="EloGroup" title="EloGroup" class="img-fluid">
+                            <img src="/static/images/logo-elogroup.jpg" alt="EloGroup" title="EloGroup" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="img-partner">
-                            <img src="images/logo-ustore.jpg" alt="Ustore" title="Ustore" class="img-fluid">
+                            <img src="/static/images/logo-ustore.jpg" alt="Ustore" title="Ustore" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 col text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="img-partner">
-                            <img src="images/logo-startse.jpg" alt="StartSe" title="StartSe" class="img-fluid">
+                            <img src="/static/images/logo-startse.jpg" alt="StartSe" title="StartSe" class="img-fluid">
                         </div>
                     </div>
 
@@ -600,19 +609,19 @@
             </div>
         </footer>
     </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.stellar.min.js"></script>
+    <script src="/static/js/jquery.countdown.min.js"></script>
+    <script src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/aos.js"></script>
+    <script src="/static/js/jquery.sticky.js"></script>
+    <script src="/static/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="/static/js/main.js"></script>
 
-    <script src="js/typed.js"></script>
+    <script src="/static/js/typed.js"></script>
     <script>var typed = new Typed('.typed-words', {
             strings: ["é o hub de inovação da Claro", "Claro existe para facilitar, potencializar e conectar a inovação dentro e fora da Claro"],
             typeSpeed: 80,
