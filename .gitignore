@@ -1,12 +1,5 @@
-
 .DS_Store
-.DS_Store
-.DS_Store
-images/.DS_Store
-.DS_Store
-.DS_Store
-fonts/.DS_Store
 __pycache__
-migrations
 db.sqlite3
 resumo_script
+beon_api/migrations

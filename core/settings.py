@@ -19,14 +19,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+#SECURITY WARNING: keep the secret key used in production secret!
 #GERAR VARIAVEL DE AMBIENTE OU ARQUIVO DENTRO DO SERVER
 with open('/etc/django_secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+# Put --insecure to launch local web server if you turn DEBUG=True (just for local test)
+DEBUG = True
 ALLOWED_HOSTS = ['localhost']
 
 
@@ -124,6 +124,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-] 
+STATICFILES_DIRS = ['static']
