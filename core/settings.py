@@ -21,8 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 #SECURITY WARNING: keep the secret key used in production secret!
 #GERAR VARIAVEL DE AMBIENTE OU ARQUIVO DENTRO DO SERVER
-with open('/etc/django_secret_key.txt') as f:
-    SECRET_KEY = f.read().strip()
+try:
+    with open('django_secret_key.txt') as f:
+        SECRET_KEY = f.read().strip()
+except:
+    SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Put --insecure to launch local web server if you turn DEBUG=True (just for local test)
@@ -125,3 +128,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = ['static']
+
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
