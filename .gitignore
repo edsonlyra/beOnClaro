@@ -3,3 +3,6 @@ __pycache__
 db.sqlite3
 resumo_script
 beon_api/migrations
+.vscode
+docker
+django_secret_key.txt
