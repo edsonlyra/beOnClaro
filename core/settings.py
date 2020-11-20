@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import json
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -22,15 +23,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #SECURITY WARNING: keep the secret key used in production secret!
 #GERAR VARIAVEL DE AMBIENTE OU ARQUIVO DENTRO DO SERVER
 try:
-    with open('django_secret_key.txt') as f:
+    with open('core/config/django_secret_key.txt') as f:
         SECRET_KEY = f.read().strip()
 except:
     SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# Put --insecure to launch local web server if you turn DEBUG=True (just for local test)
-DEBUG = True
-ALLOWED_HOSTS = ['localhost']
+# Put --insecure to launch local web server if you turn DEBUG=False (just for local test)
+DEBUG = False
+try:
+    with open('core/config/allowed_hosts') as f:
+        ALLOWED_HOSTS = f.read().strip().split(',')
+except:
+    ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -88,6 +93,9 @@ DATABASES = {
     }
 }
 
+with open('core/config/db.json', 'r') as f:
+    data=f.read()
+DATABASES = json.loads(data)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
