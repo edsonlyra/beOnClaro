@@ -223,6 +223,9 @@ h6,
     .site-section {
         padding: 4em 0;
     }
+    .logo-hackatagro {
+        max-width: 24%
+    }
 }
 
 .site-section.site-section-sm {
