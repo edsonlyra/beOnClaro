@@ -257,7 +257,7 @@ h6,
 }
 
 .site-footer p {
-    color: #737373;
+    color: #fff;
 }
 
 .site-footer h2,
@@ -268,7 +268,8 @@ h6,
 }
 
 .site-footer a {
-    color: #999999;
+    color: #fff;
+
 }
 
     .site-footer a:hover {
@@ -277,6 +278,7 @@ h6,
 
 .site-footer ul li {
     margin-bottom: 10px;
+    display: inline;
 }
 
 .site-footer .footer-heading {
@@ -1378,8 +1380,12 @@ footer .logo img {
     }
 
     .footer-section .footer-links li {
-        margin-bottom: 10px;
+        color: #fff;
+        margin-right: 15px;
+        list-style: none;
+        display: inline;
     }
+
 
 .person img {
     max-width: 100px;
@@ -1702,4 +1708,19 @@ b, strong {
     color: #666666;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.blue {
+    color: black;
+    background-color: #67C9EF;
+}
+
+
+
+.green {
+    background-color: #0A3434;
+}
+
+.green h3  {
+    color: white;
 }
