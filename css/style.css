@@ -318,6 +318,9 @@ footer .logo img {
     .hover-bg-enlarge {
         height: auto !important;
     }
+    .logo-hackatagro {
+        max-width: 80%
+    }
 }
 
 .hover-bg-enlarge > div {
